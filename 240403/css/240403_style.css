@@ -1,7 +1,7 @@
 #grid {
   border: 5px solid pink;
   display: grid;
-  grid-template-columns: 1fr 2fr 3fr ;
+  grid-template-columns: 1fr 1fr 1fr ;
 }
 
 div {
