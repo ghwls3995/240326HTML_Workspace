@@ -16,10 +16,6 @@ img {
   flex-direction: column;
 }
 
-div {
-  border: 10px pink solid;
-}
-
 h1 , a {   /* 중복 제거2 */
   /* 한줄 표기 */
 
@@ -52,3 +48,32 @@ a {
    display: inline; 
 }
 */
+
+/* 미디어 쿼리 테스트 중  */
+div {
+  border: 10px solid green;
+  font-size: 60px;
+}
+/*800px이상이면 */
+@media(min-width: 800px){
+  body{
+    background-color: darkgrey;
+  }
+}
+
+@media screen and (min-width: 800px){
+  body{
+    background: url(../images/짱구1.jpg) no-repeat  
+  fixed;
+  background-size: cover;
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  body{
+    background: url(../images/coding.jpg) no-repeat  
+  fixed;
+  background-size: cover;
+  }
+}
