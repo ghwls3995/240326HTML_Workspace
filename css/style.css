@@ -1,0 +1,66 @@
+#test {
+  color: blueviolet;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: blue;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 1px gray solid;
+  margin: 0;
+}
+
+/* 순서3, css 파일에서, grid 옵션 작업.  */
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+  padding-left: 20px;
+}
+
+ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#article {
+  padding-left: 20px;
+}
+
+#active {
+  color: red;
+
+}
+
+.saw {
+  color: blueviolet;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+
+}
+
+#newgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#page1grid {
+  object-fit: cover;
+  width: 100%;
+}
