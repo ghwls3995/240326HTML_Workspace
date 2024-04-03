@@ -1,6 +1,7 @@
 #test {
   color: blueviolet;
 }
+
 body {
   margin: 0;
 }
@@ -35,6 +36,10 @@ a {
   text-decoration: none;
 }
 
+#article {
+  padding-left: 20px;
+}
+
 #active {
   color: red;
 
@@ -42,4 +47,17 @@ a {
 
 .saw {
   color: blueviolet;
+}
+
+/* 3x3 사진첩 꾸미기 */
+#grid_pictures {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
