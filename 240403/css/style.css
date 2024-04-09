@@ -71,7 +71,7 @@ block, 공간 침투 불가능. 하나의 요소는 한 행만 차지
 결과적으로 세로 방향으로 하나의 요소씩만 차지
 */
 
-@media(max-width :800px){
+@media(max-width :850px){
   #grid {
       display: block;
   }
