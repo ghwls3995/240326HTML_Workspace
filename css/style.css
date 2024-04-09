@@ -64,3 +64,25 @@ img{
   object-fit: cover;
   width: 100%;
 }
+
+@media(max-width :850px){
+  #grid {
+      display: block;
+  }
+  #grid ol {
+      border-right: none;
+  }
+  h1 {
+      border-bottom: none;
+  }
+
+  #grid_pictures {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    /* 그리드 내부에서의 행, 열에 여백 주기.  */
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+ 
