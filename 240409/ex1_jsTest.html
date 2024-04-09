@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- 지금은 학습용으로 html 문서 안에서 연습장처럼 사용하고, 실무,무조건 파일분리해서 작업  -->
+    <!-- document 객체 안에 (수납도구 : 속성,함수들(메소드)) 
+    write 함수는 html 문서에 출력을 담당하는 기능.
+    write 함수에서 보통, 사용할 때, 소괄호 안에 무언가 값을 넣음
+    parameter 파라미터, argument 인자값-->
+    <!-- 보통 문자열들은 : 큰 따옴표(""),작은따옴표('') 안에 표기 -->
+    <script>
+       document.write("<h1>오늘 점심은 마라탕입니다. </h1>")
+       document.write("<h2>내일 메뉴는 햄버거</h2>")
+       document.write(1+1)
+       document.write("<br>")
+       document.write("1+1")
+    </script>
+    <script>
+    // if (window.confirm("Do you really want to leave?")) {
+      //  window.open("exit.html", "Thanks for Visiting!");//
+    }//
+</script>
+<input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';
+">
+<input type="button" value="alertTest" onclick="
+alert('alertTest 중입니다.')">
+
+<input type="button" value="confirmTest" onclick="
+if (window.confirm('Do you really want to leave?')) {
+     alert('배부르다')
+}
+">   
+
+<!-- <input type="text" value="onchange 테스트" onchange="alert('change')"> -->
+
+
+<br>
+<body>
+    <!-- <input type="ID" id="id"> 
+         <input type="PWD" id="pwd">
+
+         <input type="button" value="reset" onclick="clearInputs()"> 
+         <script> 
+        function clearInputs(){ 
+            document.getElementById("id").value="";
+            document.getElementById("pwd").value=""; 
+             } -->
+
+    <input type="ID" id="input1">
+    <input type="PWD" id="input2">
+    <input type="button" value="reset" onclick="clearInputs()">
+
+    <script>    
+        function clearInputs() 
+        {
+            document.getElementById("input1").value="";
+            document.getElementById("input2").value="";
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+<script>
+    document.write("방법1")
+   </script>
+   <input type="button" value="clear" onclick="
+   document.querySelector('#testInput1').value = ''
+  ">
+  
+  <script>
+    방법1
+    function clearMethod() {
+        var test = document.querySelector('#testInput1')
+        test.value = ''
+      }
+    </script>
+   방법2
+     <input type="button" value="clear" onclick="
+   var test = document.querySelector('#testInput2')
+   test.value = ''
+  ">
+   방법3
+    <input type="button" value="clear" onclick="
+   document.querySelector('#testInput').value = ''
+  ">
+
+-->
