@@ -18,10 +18,11 @@ h1 {
 #grid {
   display: grid;
   grid-template-columns: 150px 1fr;
+  padding-bottom: 450px;
 }
 
 #grid ol {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 ol {
@@ -51,6 +52,7 @@ a {
 
 img{
   object-fit: cover;
+  height:100%;
   width: 100%;
 }
 
@@ -64,7 +66,10 @@ img{
   width: 100%;
 }
 
-@media(max-width :850px){
+.picture_container {
+  border: 5px pink dotted ;
+}
+@media(max-width :1200px){
   #grid {
       display: block;
   }
