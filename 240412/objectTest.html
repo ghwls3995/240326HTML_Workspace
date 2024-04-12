@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var starcraft = { 
+            "zerg" : "히드라",
+            "terran" : "마린",
+            "protoss" : "질럿"
+        }
+        // 가져오기 ,  get
+        document.write("스타에서 좋아하는 유닛:"+starcraft.zerg + "<br>");
+
+        // 값 추가하기 , add
+        starcraft.zerg_unit2="저글링";
+        
+        // 가져오기 ,  get
+        document.write("스타에서 좋아하는 유닛:"+starcraft.zerg_unit2+ "<br>");
+
+        // 값 추가하기 , add
+        starcraft["zerg_unit3"]="뮤탈리스크";
+
+         // 가져오기 ,  get
+         document.write("스타에서 좋아하는 유닛:"+starcraft["zerg_unit3"]+ "<br>");
+
+
+    </script>
+    
+<h2>Iterate</h2>
+<script>
+	for(var key in coworkers) {
+	
+	}
+</script>
+
+<h2>starcraft 객체 내용 반복문 이용해서 전체 출력해보기 .</h2>
+<script>
+    // 향상된 for 또는 , for each 문 등 , 반복이 가능한 요소의 전체 내용을 표현한다.
+    // 기본문법, for(var 받는 변수 in 반복 가능한것들)
+    // 반복가능한것들 : 배열, 리스트 , 객체 등 
+    // 동작방식 : 반복 가능한 것들 중에서 하나씩 꺼내서, 앞에 있는 var 변수에 하나씩 할당.
+
+	for(var unit in starcraft) {
+        document.write('<h2> key: '+ unit + '</h2>' + '<br>');	
+	}
+
+	for(var unit in starcraft) {    
+        document.write('<h2>starcraft 키 key: '+    unit + ',갑 :' + starcraft[unit] + '</h2>' + '<br>');	
+	}
+</script>
+<h2>Property & Method</h2>
+<script>
+starcraft.showAll = function() {
+ for(var key in starcraft) {
+	document.write(key + ' : ' + starcraft[key] + '<br>');
+  }
+}
+  starcraft.showAll();
+</script>
+
+<h2>Property & Method -> this 대체</h2>
+<script>
+starcraft.showAll = function() {
+ for(var key in this) {
+	document.write(key + ' : ' + this[key] + '<br>');
+}
+}
+starcraft.showAll();
+</script>
+</body>
+</html>

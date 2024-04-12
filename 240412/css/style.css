@@ -1,0 +1,94 @@
+#test {
+  color: blueviolet;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: blue;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 1px gray solid;
+  margin: 0;
+}
+
+/* 순서3, css 파일에서, grid 옵션 작업.  */
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+  padding-left: 20px;
+}
+
+ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#article {
+  padding-left: 20px;
+}
+
+#active {
+  color: red;
+
+}
+
+.saw {
+  color: blueviolet;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+
+}
+
+#grid_pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#page1grid {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* 800px 미만시 , h1의 하단선 제거 , ol의 오른쪽 선 제거,
+grid 라는 아이디 부분을 grid->block,
+block, 공간 침투 불가능. 하나의 요소는 한 행만 차지
+결과적으로 세로 방향으로 하나의 요소씩만 차지
+*/
+
+@media(max-width :850px){
+  #grid {
+      display: block;
+  }
+  #grid ol {
+      border-right: none;
+  }
+  h1 {
+      border-bottom: none;
+  }
+
+  #grid_pictures {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    /* 그리드 내부에서의 행, 열에 여백 주기.  */
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+ 
